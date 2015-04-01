@@ -64,18 +64,20 @@ h1, h2, h3, h4, h5, h6 {
 // Restyled Primary Buttons
 
 .btn-primary {
-	.button-variant(white; @brand-primary; @brand-primary);
+	.btn-primarycolor;
 	.heading-font;
 	font-weight: 700;
 }
 
 .btn-xl {
-	.button-variant(white; @brand-primary; @brand-primary);
-	.heading-font;
-	font-weight: 700;
+	.btn-primary;
 	border-radius: 3px;
 	font-size: 18px;
 	padding: 20px 40px;
+}
+
+.btn-primarycolor {
+	.button-variant(white; @brand-primary; @brand-primary);
 }
 
 // Custom Navigation Bar
@@ -534,13 +536,16 @@ aside.clients {
 
 // Contact Section
 
-section#contact {
+section#connect {
 	background-color: @gray-darkest;
 	background-image: url('../img/map-image.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	.section-heading {
 		color: white;
+	}
+	.section-subheading {
+		color: @brand-primary;
 	}
 	.form-group {
 		margin-bottom: 25px;
